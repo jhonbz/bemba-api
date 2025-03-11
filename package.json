@@ -1,0 +1,20 @@
+{
+  "name": "bemba-api",
+  "version": "1.0.0",
+  "description": "Este proyecto es una API desarrollada en Node.js para gestionar la base de datos en AWS RDS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonbz/bemba-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhonbz/bemba-api/issues"
+  },
+  "homepage": "https://github.com/jhonbz/bemba-api#readme"
+}
