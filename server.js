@@ -1,11 +1,13 @@
 require('dotenv').config();
 const express = require('express');
 const mysql = require('mysql2');
+const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+
 
 app.use(express.json());
+app.use(cors());
 app.use(require('cors')());
 
 // Configurar conexión con AWS RDS
@@ -27,10 +29,12 @@ db.connect(err => {
 
 // Ruta de prueba
 app.get('/', (req, res) => {
-    res.send('¡API de BEMBA funcionando!');
+    res.send('¡Bienvenido a la API de BEMBA!');
 });
 
 // Iniciar el servidor
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+

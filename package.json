@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jhonbz/bemba-api/issues"
   },
-  "homepage": "https://github.com/jhonbz/bemba-api#readme"
+  "homepage": "https://github.com/jhonbz/bemba-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
