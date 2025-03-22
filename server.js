@@ -32,6 +32,9 @@ app.get('/', (req, res) => {
     res.send('¡Bienvenido a la API de BEMBA!');
 });
 
+const authRoutes = require("./routes/auth_routes");
+app.use("/api/auth", authRoutes);
+
 // Iniciar el servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
