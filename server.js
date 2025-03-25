@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 
 const authRoutes = require("./routes/auth_routes");
 app.use("/api/auth", authRoutes);
-
+app.use("/api/users", require("./routes/user_routes"));
 // Iniciar el servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
