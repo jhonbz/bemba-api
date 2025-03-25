@@ -7,5 +7,6 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
 });
 
 const User = require("./user")(sequelize, Sequelize);
+const Session = require("./session")(sequelize, Sequelize);
 
-module.exports = { sequelize, User };
+module.exports = { sequelize, User ,Session};
